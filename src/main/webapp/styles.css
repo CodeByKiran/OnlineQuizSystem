@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styles (Login & Sign Up) */
+.form-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container button {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    background-color: #5a67d8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.form-container button:hover {
+    background-color: #434190;
+}
+
+/* Admin Dashboard */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2d3748;
+    color: white;
+    padding: 1rem;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sidebar a:hover {
+    background-color: #4a5568;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.dashboard h1 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #4a5568;
+    color: white;
+}
+
+/* Quiz Page */
+.quiz-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.quiz-container .question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.quiz-container .options {
+    margin-bottom: 1rem;
+}
+
+.quiz-container .options label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #5a67d8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.quiz-container button:hover {
+    background-color: #434190;
+}
+
+/* Results Page */
+.results-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.results-container h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.results-container .score {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5a67d8;
+}
+
+.results-container p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar, .footer, .form-container, .quiz-container, .results-container {
+        padding: 1rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 1rem;
+        position: static;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+}
+ 
